@@ -14,11 +14,8 @@ jobs:
         uses: "./.github/actions/nodejs-setup"
         with:
           node-version: "18"
-          
+
       - name: "Install dependencies"
         run: npm install
-
-      - name: "Start server"
-        run: npm start
 
       - run: echo "Node js is running"
